@@ -24,7 +24,7 @@ app.delete("/delete/:id",require("./routes/products"));
 //User Authentication
 app.post("/signup",require("./routes/auth"));
 app.post("/login",require("./routes/auth"));
-app.get("/getuser/:token",require("./routes/auth"))
+app.get("/getuser/:token",require("./routes/auth"));
 
 //Server started
 connecttoMongo().then(()=>{
